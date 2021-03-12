@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/fh10178018/follow_lizard#readme",
   "devDependencies": {
-    "backbone": "^1.4.0"
+    "backbone": "^1.4.0",
+    "html-webpack-plugin": "^5.3.1"
   },
   "dependencies": {
     "koa": "^2.13.1",
