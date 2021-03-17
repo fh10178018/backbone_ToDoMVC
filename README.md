@@ -9,7 +9,8 @@
 
 - [x] 配置webpack，和引入相关插件
 - [x] 基于Backbone进行组件化开发，先把基本view视图实现
-- [x] 实现toDoMVC的基本功能
+- [] 实现toDoMVC的基本功能
+- [] 实现路由操作，增添些功能
 
 ## 安装依赖
 `npm install`
