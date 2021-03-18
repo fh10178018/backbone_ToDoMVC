@@ -9,6 +9,11 @@ module.exports = {
     port: 3000,
     open: true
   },
+  output: {
+    path: path.resolve(__dirname, 'docs'), // 设置打包文件目录
+    filename: '[name].min.js',
+    chunkFilename: '[chunkhash].chunk.min.js'
+  },
   module: {
     rules: [{
       test: /\.css$/,
