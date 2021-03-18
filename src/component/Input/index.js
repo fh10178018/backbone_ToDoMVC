@@ -12,7 +12,6 @@ var Input = Backbone.View.extend({// header组件视图
   events: {
     "focus": "handleFocus",
     "blur": "handleBlur",
-    "input": "handleInput",
     "keydown": "handleFinsh"
   },
   attributes: {
@@ -25,9 +24,13 @@ var Input = Backbone.View.extend({// header组件视图
   handleFinsh: function (event) { // 监听回车的回调函数
     if (event.keyCode === 13) {
       var curInputValue = event.target.value // 回车时，当前input的值
-      toDolistModel.add({ name: curInputValue })
-      console.log(toDolistModel.toJSON())
-      this.handleClear()
+      if (curInputValue != "") {
+        toDolistModel.add({ name: curInputValue })
+        console.log(toDolistModel.toJSON())
+        this.handleClear()
+      } else {
+        alert("输入不能为空")
+      }
     }
   },
   handleFocus: function () {
