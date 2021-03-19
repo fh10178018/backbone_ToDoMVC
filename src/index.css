@@ -153,6 +153,12 @@ body {
 	border-bottom: 1px solid #ededed;
 }
 
+.todo-list li small{
+	font-size: x-small;
+	color: #999;
+	margin-left: 10px;
+}
+
 .todo-list li:last-child {
 	border-bottom: none;
 }
@@ -206,9 +212,10 @@ body {
 }
 
 .todo-list li label {
+	display: flex;
+	justify-content: space-between;
 	word-break: break-all;
-	padding: 15px 15px 15px 60px;
-	display: block;
+	padding: 15px 55px 15px 60px;
 	line-height: 1.2;
 	transition: color 0.4s;
 }
