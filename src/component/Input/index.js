@@ -4,7 +4,7 @@ toDoMVC input 输入组件
 */
 
 var Backbone = require('backbone')
-var toDolistModel = require('../../model/toDoListModel')
+var toDolist = require('../../model/toDoListModel')
 
 var Input = Backbone.View.extend({// header组件视图
   tagName: 'input',
@@ -25,8 +25,7 @@ var Input = Backbone.View.extend({// header组件视图
     if (event.keyCode === 13) {
       var curInputValue = event.target.value // 回车时，当前input的值
       if (curInputValue != "") {
-        toDolistModel.add({ name: curInputValue })
-        console.log(toDolistModel.toJSON())
+        toDolist.create({ name: curInputValue })
         this.handleClear()
       } else {
         alert("输入不能为空")
