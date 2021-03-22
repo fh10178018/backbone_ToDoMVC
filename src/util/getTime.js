@@ -1,6 +1,6 @@
 // 注:时间戳转时间（ios手机NaN）
-function getTime(nS) {
-  var date = new Date(parseInt(nS) * 1000);
+function getTime (nS) {
+  var date = new Date(parseInt(nS));
   var year = date.getFullYear();
   var mon = date.getMonth() + 1;
   var day = date.getDate();
