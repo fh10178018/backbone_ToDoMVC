@@ -29,5 +29,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   entry: path.resolve(__dirname, 'src/index.js'), // 设置入口运行文件
-  mode: 'development' // 设置mode
+  mode: 'development', // 设置mode
+  target: ['es5']
 }
